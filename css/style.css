@@ -1,0 +1,32 @@
+body {
+   margin: 0;
+}
+
+.banner {
+   position: relative;
+   height: 449px;
+   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+   background-size: cover;
+   background-position: center center;
+   background-color: black;
+   background-repeat: no-repeat;
+}
+
+.banner:after {
+   content: "";
+   background-color: black;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0.60;
+}
+
+.container-header {
+   width: 1200px;
+   padding: 0 15px 0 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
