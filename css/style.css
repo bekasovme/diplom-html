@@ -1,9 +1,116 @@
+@font-face {
+   font-family: "Open Sans";
+   src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff")
+}
+
+@font-face {
+   font-family: "Open Sans Bold";
+   src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff")
+}
+
+/*! Обнуление CSS */
+
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+/*! Обнуление CSS завершено */
+
+
+
 body {
    margin: 0;
 }
 
 .banner {
    position: relative;
+   width: 100%;
+   min-width: 1100px;
    height: 449px;
    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
    background-size: cover;
@@ -25,8 +132,63 @@ body {
 }
 
 .container-header {
-   width: 1200px;
+   position: relative;
+   max-width: 1200px;
+   min-width: 1100px;
    padding: 0 15px 0 15px;
+   padding-top: 28px;
    margin-left: auto;
    margin-right: auto;
+   z-index: 1;
+}
+
+.logo-nav {
+   display: flex;
+   justify-content: space-between;
+}
+
+.header-logo {
+   width: 160px;
+}
+
+.menu-list {
+   display: flex;
+   list-style: none;
+   text-transform: uppercase;
+   font-family: "Open Sans", sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+}
+
+.menu-list {
+   width: 463px;
+}
+
+.menu-list-item:nth-child(n + 1) {
+   margin-right: 35px;
+}
+
+.menu-list-item:last-child {
+   margin-right: 0;
+}
+
+.menu-list-item:hover {
+   cursor: pointer;
+   text-decoration: solid underline white;
+}
+
+.container-title {
+   padding-top: 75px;
+}
+
+.title {
+   width: 678px;
+   margin-right: auto;
+   margin-left: auto;
+   font-family: "Open Sans Bold", sans-serif;
+   text-transform: uppercase;
+   text-align: center;
+   color: #ffffff;
+   font-size: 45px;
+   line-height: 75px;
 }
