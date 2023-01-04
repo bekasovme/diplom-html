@@ -101,94 +101,33 @@ h6 {
 
 /*! Обнуление CSS завершено */
 
-
-
-body {
-   margin: 0;
+.wrapper {
+   display: flex;
 }
 
-.banner {
-   position: relative;
-   width: 100%;
-   min-width: 1100px;
+.header {
    height: 449px;
-   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
-   background-size: cover;
-   background-position: center center;
-   background-color: black;
-   background-repeat: no-repeat;
 }
 
-.banner:after {
-   content: "";
-   background-color: black;
-
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   opacity: 0.60;
+.container {
+   max-width: 1170px;
+   margin: 0 auto;
 }
 
-.container-header {
-   position: relative;
-   max-width: 1200px;
-   min-width: 1100px;
-   padding: 0 15px 0 15px;
-   padding-top: 28px;
-   margin-left: auto;
-   margin-right: auto;
-   z-index: 1;
-}
+.header__row {}
 
-.logo-nav {
-   display: flex;
-   justify-content: space-between;
-}
+.header__logo-nav {}
 
-.header-logo {
-   width: 160px;
-}
+.header__logo {}
 
-.menu-list {
-   display: flex;
-   list-style: none;
-   text-transform: uppercase;
-   font-family: "Open Sans", sans-serif;
-   font-size: 13px;
-   color: #ffffff;
-}
+.header__nav {}
 
-.menu-list {
-   width: 463px;
-}
+.header__title {}
 
-.menu-list-item:nth-child(n + 1) {
-   margin-right: 35px;
-}
+.content {}
 
-.menu-list-item:last-child {
-   margin-right: 0;
-}
+.footer {}
 
-.menu-list-item:hover {
-   cursor: pointer;
-   text-decoration: solid underline white;
-}
+.footer__row {}
 
-.container-title {
-   padding-top: 75px;
-}
-
-.title {
-   width: 678px;
-   margin-right: auto;
-   margin-left: auto;
-   font-family: "Open Sans Bold", sans-serif;
-   text-transform: uppercase;
-   text-align: center;
-   color: #ffffff;
-   font-size: 45px;
-   line-height: 75px;
-}
+.footer-items {}
