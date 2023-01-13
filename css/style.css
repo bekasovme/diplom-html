@@ -104,7 +104,6 @@ h6 {
 .wrapper {
    display: flex;
    flex-direction: column;
-   /* height: 100%; */
 }
 
 .header {
@@ -154,6 +153,7 @@ h6 {
 
 .header__nav {
    display: flex;
+   column-gap: 35px;
 }
 
 .header__nav-items a {
@@ -165,11 +165,6 @@ h6 {
 
 .header__nav-items a:hover {
    border-bottom: 2px solid white;
-}
-
-
-.header__nav-items:nth-child(n+1) {
-   margin-right: 35px;
 }
 
 .header__title {
@@ -197,23 +192,12 @@ h6 {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+   row-gap: 60px;
    width: 778px;
 }
 
 .post-block {
    height: 294px;
-}
-
-.post-block:nth-child(1n + 1) {
-   margin: 30px 0;
-}
-
-.post-block:nth-child(-n + 2) {
-   margin-top: 0;
-}
-
-.post-block:nth-last-child(-n + 2) {
-   margin-bottom: 0;
 }
 
 .post-img {
@@ -305,15 +289,11 @@ h6 {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+   row-gap: 22px;
 }
 
 .new-post-block {
    height: 70px;
-   margin-bottom: 22px;
-}
-
-.new-post-block:nth-last-child(-n + 3) {
-   margin-bottom: 0;
 }
 
 .new-post-img {
@@ -389,6 +369,10 @@ h6 {
    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
 }
 
+.form-subscription {
+   margin-bottom: 60px; 
+}
+
 .subscription {
    width: 272px;
    height: 48px;
@@ -411,7 +395,45 @@ h6 {
    margin-top: 18px;
 }
 
+.tags-wrap {
+   margin-bottom: 60px;
+}
 
+.tags {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
+}
+
+.tags li {
+   font-family: "Open Sans Bold", sans-serif;
+   font-size: 12px;
+   text-transform: uppercase;
+
+   padding: 8px 10px;
+   border: 3px solid #f0f0f0;
+   box-sizing: border-box;
+}
+
+.themes {
+   padding: 15px 0;
+   border-bottom: 1px solid #eeeeee;
+   box-sizing: border-box;
+}
+
+.themes a {
+   font-family: "Open Sans Bold", sans-serif;
+   font-size: 14px;
+   color: black;
+   margin-right: 5px;
+}
+
+.themes span {
+   font-family: "Open Sans Bold", sans-serif;
+   font-size: 12px;
+   color: #b59f5b;
+   vertical-align: super;
+}
 
 .footer {
    margin-top: 65px;
@@ -429,6 +451,7 @@ h6 {
    display: flex;
    align-items: flex-start;
    justify-content: center;
+   column-gap: 30px;
 }
 
 .footer-icons {
@@ -495,14 +518,6 @@ h6 {
    background-image: url(/img/tumblr-bronze.svg);
    background-position: center;
    background-repeat: no-repeat;
-}
-
-.footer-icons:nth-child(n + 1) {
-   margin-right: 30px;
-}
-
-.footer-icons:nth-last-child(-n + 1) {
-   margin-right: 0;
 }
 
 .footer-items-copyright {
