@@ -382,6 +382,7 @@ h6 {
    padding: 20px 0 20px 20px;
    background-color: #f4f7f6;
    box-sizing: border-box;
+   margin-bottom: 18px;
 }
 
 .subscription-button {
@@ -392,7 +393,6 @@ h6 {
    color: white;
    text-transform: uppercase;
    background-color: #b59f5b;
-   margin-top: 18px;
 }
 
 .tags-wrap {
