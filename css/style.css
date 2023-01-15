@@ -145,6 +145,7 @@ h6 {
    display: flex;
    justify-content: space-between;
    padding-top: 28px;
+   margin-bottom: 75px;
 }
 
 .header__logo {
@@ -168,12 +169,14 @@ h6 {
 }
 
 .header__title {
+   width: 690px;
+   margin: 0 auto;
    font-family: "Open Sans Bold", sans-serif;
    font-size: 45px;
    line-height: 75px;
    color: #ffffff;
    text-transform: uppercase;
-   padding: 75px 240px 0;
+   /* padding: 75px 240px 0; */
    text-align: center;
    box-sizing: border-box;
 }
