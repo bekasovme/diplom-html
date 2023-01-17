@@ -164,9 +164,21 @@ h6 {
    color: #ffffff;
 }
 
-.header__nav-items a:hover {
-   border-bottom: 2px solid white;
+/* ! Делаю hover подчеркивание кнопок навигации */
+
+.header__nav-items a:after {
+   content: '';
+   display: block;
+   width: 0;
+   height: 2px;
+   background: #fff;
+   transition: width .3s;
 }
+
+.header__nav-items a:hover:after {
+   width: 100%;
+}
+
 
 .header__title {
    width: 690px;
@@ -418,6 +430,10 @@ h6 {
    box-sizing: border-box;
 }
 
+.tags li a:hover {
+   color: #b59f5b;
+}
+
 .themes {
    padding: 15px 0;
    border-bottom: 1px solid #eeeeee;
@@ -429,6 +445,12 @@ h6 {
    font-size: 14px;
    color: black;
    margin-right: 5px;
+}
+
+.themes a:hover {
+   color: #b59f5b;
+   font-size: 16px;
+   transition-duration: .3s;
 }
 
 .themes span {
@@ -473,6 +495,8 @@ h6 {
    background-image: url(/img/twitter-bronze.svg);
    background-position: center;
    background-repeat: no-repeat;
+   transition-duration: 1s;
+   transition-delay: 0.2s;
 }
 
 .icon-pinterest {
@@ -485,6 +509,8 @@ h6 {
    background-image: url(/img/pinterest-bronze.svg);
    background-position: center;
    background-repeat: no-repeat;
+   transition-duration: 1s;
+   transition-delay: 0.2s;
 }
 
 .icon-facebook {
@@ -497,6 +523,8 @@ h6 {
    background-image: url(/img/facebook-bronze.svg);
    background-position: center;
    background-repeat: no-repeat;
+   transition-duration: 1s;
+   transition-delay: 0.2s;
 }
 
 .icon-instagram {
@@ -509,6 +537,8 @@ h6 {
    background-image: url(/img/instagram-bronze.svg);
    background-position: center;
    background-repeat: no-repeat;
+   transition-duration: 1s;
+   transition-delay: 0.2s;
 }
 
 .icon-tumblr {
@@ -521,6 +551,8 @@ h6 {
    background-image: url(/img/tumblr-bronze.svg);
    background-position: center;
    background-repeat: no-repeat;
+   transition-duration: 1s;
+   transition-delay: 0.2s;
 }
 
 .footer-items-copyright {
